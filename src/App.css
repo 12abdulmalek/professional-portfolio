@@ -1,18 +1,44 @@
-.App {
-  text-align: center;
+.App{
+  background-color: #22252c;
 }
-ul li{
-  display: none;
+.scroll{
+    float: right;
+    color: rgb(0, 255, 238);
+    position: fixed; 
+    font-size: 43px;
+    right: 14px;
+   
+    bottom: 30px;
+   
+    height: 20px;
+   
+    z-index: 9999999999999999999999999999999999;
+    cursor: pointer;
+    animation: fadeIn 0.3s;
+    transition: opacity 0.4s;
+    opacity: 0.5;
+    
 }
-input{
-  display: none;
+.scroll:hover{
+    opacity: 1;
 }
-i{
-  float: right;
-}
-@media (max-width:900px) {
-  #check:checked~ul li {
-    background-color: red;
-    display: block;
+
+@keyframes fadeIn {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-}
+
+  .lines{
+    position: fixed;
+    stroke: red;
+    stroke-width:6px ;
+    stroke-linecap: butt;
+  stroke-dasharray: 0;
+  }
+  .progressBar-line{
+    z-index: 99999999999999999999999999999;
+  }

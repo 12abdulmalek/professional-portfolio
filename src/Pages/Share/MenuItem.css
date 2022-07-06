@@ -1,0 +1,74 @@
+.menu {
+    background: linear-gradient(to right, #17d498, #08f7f6);
+}
+
+.menu-item {
+    /* position: fixed; */
+    background: linear-gradient(to right, #17d498, #08f7f6);
+    z-index: 999999999;
+    /* box-shadow: 0 3px 5px 1px rgb(0 0 0 / 27%); */
+}
+
+.menu-item-1 {
+    position: fixed;
+    background: linear-gradient(to right, #17d498, #08f7f6);
+    z-index: 99;
+    box-shadow: 0 3px 5px 1px rgb(0 0 0 / 27%);
+}
+
+.social-link a {
+    color: white;
+    font-size: 33px;
+}
+
+.menu-line-btn {
+    color: white;
+    float: right;
+    background-color: transparent;
+    border: 0px solid transparent;
+    font-size: 46px;
+}
+
+.modal-lg,
+.modal-dialog {
+    width: 100% !important;
+}
+
+@media (min-width:992px) {
+    .modal-lg {
+        width: 100% !important;
+    }
+}
+
+.modal-content {
+    background: rgba(0, 0, 0, 0.269) !important;
+    border: 0px solid red !important;
+}
+
+.modal-header {
+    border-bottom: 10px transparent solid !important;
+}
+
+.btn-close:focus {
+    outline: none;
+}
+
+.intro {
+    padding-top: 150px;
+    padding-bottom: 60px;
+}
+
+.introduction h1 {
+    font-size: 100px;
+    color: white;
+}
+
+.introduction h3 {
+    font-size: 50px;
+    color: white;
+}
+
+.introduction p {
+    font-size: 28px;
+    color: white;
+}

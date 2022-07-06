@@ -1,0 +1,101 @@
+.improve{
+  background-color: rgb(34 37 44);
+}
+.text-container{
+  background-color: #313741;
+  padding-bottom: 80px;
+}
+.professional{
+  padding: 100px;
+}
+.info span{
+  color: white;
+}
+.progress-line{
+    position: relative;
+    background-color: #0f1012;
+    height: 5px;
+    width:300px;
+    border-radius: 12px;
+    color: red;
+  }
+ 
+  
+  .progress-line .t.active{
+    position: absolute;
+    height: 5px;
+    transform: scaleX(0);
+    /* background-color: yellow; */
+    transform-origin: left;
+    animation: line 4s 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  
+  }
+  .progress-line .t1.active{
+    width: 160px ;
+  }
+  .progress-line .t2.active{
+    width: 160px ;
+  }
+  .progress-line .t3.active{
+    width: 160px ;
+  }
+  .progress-line .t4.active{
+    width: 170px ;
+  }
+  .progress-line .t5.active{
+    width: 150px ;
+  }
+  .progress-line .t6.active{
+    width: 180px ;
+  }
+  .progress-line .t.active:before{
+    position: absolute;
+    display: block;
+    content: '90%';
+    top: -22px;
+    right: 0;
+    opacity: 0;
+    animation: linebar 1s 3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+  .progress-line .t.active:after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 7px;
+    height: 7px;
+    padding: px;
+    top: -1px;
+    right: 0;
+    right: -1.9px;
+    /* opacity: 0; */
+    border-radius:50%;
+    background-color: #00d7bb;
+    animation: lineba 1s 3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+  /* .t1.active:before{
+    position: absolute;
+    width: 170px;
+    height: 5px;
+    transform: scaleX(0);
+    background-color: yellow;
+    transform-origin: left;
+    animation: line 4s 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  
+  } */
+
+
+
+
+  @keyframes line {
+    100%{
+        background:#00d7bb;
+        border-radius: 12px;
+        transform: scaleX(1);
+        color: white;
+    }
+  }
+  @keyframes linebar {
+    100%{
+        opacity: 1;
+    }
+  }

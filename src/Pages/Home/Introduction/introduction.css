@@ -1,0 +1,96 @@
+.my-intro{
+    background-color: rgb(34 37 44);
+}
+
+.my-img{
+    position: relative;
+}
+.img-border{
+    height: 385px;
+    width: 365px;
+    border:8px solid #00d7bb;
+    /* position: absolute; */
+}
+.my-pic{
+    position: absolute;
+    top: 49px;
+    left: -49px;
+}
+.download-btn{
+    margin-top: 80px;
+   color: white;
+}
+.download-btn a{
+    background: linear-gradient(to right , #17d498 , #08f7f6);
+    color: white;
+    box-shadow: 0 0 20px rgb(22 213 156 / 70%);
+    padding: 12px;
+}
+.about-me{
+    /* color: #00d7bb; */
+    font-size: 46px;
+    background: linear-gradient(to right , #17d498 , #08f7f6);
+    background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pro-texts{
+    color: aliceblue;
+    margin: 18px 0px;
+
+}
+.pro-text{
+    color: #00d7bb;
+}
+.interest-sec{
+    position: relative;
+}
+.interest-icon{
+    /* display: none; */
+   /* position: absolute; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 70px;
+   height: 70px;
+   background: 
+   linear-gradient(black,black) padding-box,
+   linear-gradient(to right, darkblue, darkorchid) border-box;
+   border-radius: 50em;
+   border: 4px solid transparent;
+   
+}
+.interest-icon:hover{
+    width: 69px;
+    height: 69px;
+    background: linear-gradient( #17d498 , #08f7f6);
+}
+.interest-text{
+       visibility: hidden;
+       
+}
+@keyframes slider {
+    0% {
+       
+        transform: translatey(0px);
+      }
+      100% {
+        transform: translatey(-2px);
+      }
+}
+.interest-icon:hover + .interest-text{
+       visibility: visible;
+       color: white;
+       background-color: transparent;
+       margin-top:1px;
+       animation:  slider .4s ease-in .2s 1 alternate forwards;
+        
+}
+.interest-icon-1{
+    transform: rotate(90deg);
+}
+@media (max-width:991px) {
+    .profile-text-filed{
+        margin-top: 80px;
+    }
+}
